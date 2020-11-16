@@ -1,0 +1,41 @@
+Pre-Requsites(Support Software):
+GPU that supports CUDA Tool Kit
+
+Hardware requirements
+The following GPU-enabled devices are supported:
+
+NVIDIA® GPU card with CUDA® Compute Capability 3.5 or higher. See the list of CUDA-enabled GPU cards.
+Software requirements
+The following NVIDIA® software must be installed on your system:
+
+NVIDIA® GPU drivers —CUDA 10.1 requires 418.x or higher.
+CUDA® Toolkit —TensorFlow supports CUDA 10.1 (TensorFlow >= 2.1.0)
+CUPTI ships with the CUDA Toolkit.
+cuDNN SDK (>= 7.6)
+(Optional) TensorRT 6.0 to improve latency and throughput for inference on some models.
+
+
+Installation Steps after install support software:::
+
+Step 1  : Install Anaconda
+
+Step 2  :Open conda cmd as admin
+
+Step 3  :use conda env create -v -f tensorflow.yml
+	:to create a virtual environment
+	:Copy tensrflow-gpu.yml file in the cmd directory(generally at c:\Windows\Users\Username\)
+
+Step 4  : Install python ipykernel 3.7
+	python -m ipykernel install --user --name tensorflow --display-name "Python 3.7(tensorflow)"
+
+Step 5: close terminal and open the project directory and on the URL type cmd and press enter
+
+Step 6 : Activate the environment using:
+         conda activate tensorflow  
+
+Step 7: Run Jupyter notebokk using the command Jupyter Note Book
+
+Step 8: Run the .ipynb file from the project directory
+
+
+NOTE: Before Running the Code Make sure to properly change the Path of the project folders in your directory
